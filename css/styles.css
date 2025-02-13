@@ -90,10 +90,3 @@ button:active {
     text-align: center;
 }
 
-/* Footer (opsional jika ingin dikembangkan nanti) */
-footer {
-    text-align: center;
-    padding: 10px;
-    color: #7f8c8d;
-    font-size: 12px;
-}
