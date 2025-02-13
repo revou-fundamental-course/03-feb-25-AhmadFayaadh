@@ -6,12 +6,71 @@
         <!-- tag untuk responsive design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <!-- link css -->
         <link rel="stylesheet" href="css/styles.css">
+        <!-- link javascript -->
+        <script src="js\script.js" defer></script>
     </head>
 
     <body>
-        <header></header>
-        <main></main>
+        <header class="main-header">
+            <h1> Konversi Suhu</h1>
+        </header> 
+    
+        <main>
+            <!-- introduction -->
+            <section>
+                <p>Masukkan suhu derajat ke kotak dibawah,
+                    lalu klik tombol konversi untuk mendapatkan hasil konversi 
+                    sesuai pilihan.</p>
+            </section>
+    
+            <!-- Form Input Suhu Yang Ingin Di Konversi -->
+            <section>
+                <form id="conversion-form">
+                    <div class="input-group">
+                        <label for="main-input">Suhu</label>
+                        <input type="number" id="main-input">
+                    </div>   
+    
+                    <div class="input-group">
+                        <label for="conversion-type">Pilih Konversi</label>
+                        <select id="conversion-type">
+                            <option value="c-to-f">Celcius ke Fahrenheit</option>
+                            <option value="f-to-c">Fahrenheit ke Celcius</option>
+                            <option value="c-to-k">Celcius ke Kelvin</option>
+                            <option value="k-to-c">Kelvin ke Celcius</option>
+                            <option value="f-to-k">Fahrenheit ke Kelvin</option>
+                            <option value="k-to-f">Kelvin ke Fahrenheit</option>
+                        </select>
+                    </div>
+    
+                    <div class="button-group">
+                        <button type="button" id="convert-button">Konversi</button>
+                        <button type="button" id="reset-button">Reset</button>
+                    </div>
+                </form>
+            </section>
+    
+            <!-- Hasil Konversi Suhu -->
+            <section>
+                <div class="input-group">
+                    <label for="main-result">Hasil</label>
+                    <input type="text" id="main-result" readonly>
+                </div>
+            </section>
+    
+            <!-- Penjelasan Rumus Konversi Suhu -->
+            <section>
+                <div class="input-group">
+                    <label for="cara-konversi">Cara Konversi</label>
+                    <input type="text" id="cara-konversi" readonly>
+                </div>
+            </section>
+    
+        </main>
+    
         <footer></footer>
     </body>
-</html>
+    
+    </html>

@@ -1,1 +1,99 @@
-/*ini file css*/
+/* Memberikan batasan pada tampilan utama */
+main {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+
+    /* Background */
+    background-color: #f4f6f7;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header utama */
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-family: Arial, sans-serif;
+}
+
+/* Untuk setiap section */
+section {
+    padding: 15px 0;
+}
+
+/* Input group styling */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+
+    /* Transition untuk efek focus */
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #2980b9;
+}
+
+/* Tombol */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+    /* Transition untuk hover */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
+
+button:active {
+    background-color: #16a085;
+}
+
+/* Bagian hasil */
+#main-result, #cara-konversi {
+    background-color: #ecf0f1;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer (opsional jika ingin dikembangkan nanti) */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #7f8c8d;
+    font-size: 12px;
+}
